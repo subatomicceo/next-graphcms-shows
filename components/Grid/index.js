@@ -3,7 +3,8 @@ import styled, { css } from 'styled-components'
 import { truncateText } from '@l/utils'
 
 const CardStyle = css`
-  margin: 1rem;
+  display: block;
+  margin: 1rem auto;
   flex-basis: 45%;
   padding: 1.5rem;
   text-align: left;
@@ -12,6 +13,7 @@ const CardStyle = css`
   border: 1px solid var(--gallery-grey);
   border-radius: 10px;
   transition: 150ms ease;
+  width: 100%;
 
   :hover,
   :focus,

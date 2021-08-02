@@ -7,8 +7,9 @@ export const ListItemWrap = styled.div`
   cursor: pointer;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   padding: 1.5rem;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   transition: 150ms ease;
   width: 100%;
@@ -46,7 +47,7 @@ export const ListItemWrap = styled.div`
     font-size: 1rem;
     font-weight: bold;
     line-height: 1.5;
-    flex: 1;
+    flex: 0.5;
   }
 
   span {
@@ -54,6 +55,12 @@ export const ListItemWrap = styled.div`
     font-size: 0.8rem;
     line-height: 1.5;
     flex: 1;
+  }
+
+  /* large screens */
+  @media (min-width: 600px) {
+    flex-direction: row;
+    text-align: left;
   }
 `
 
