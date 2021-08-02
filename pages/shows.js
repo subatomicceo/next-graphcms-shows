@@ -18,7 +18,7 @@ export default function Shows({ shows }) {
   const [toggle, setToggle] = useState(grid)
 
   return (
-    <Layout title="next-graphcms-shows / Shows">
+    <Layout title="next-graphcms-shows / Shows" maxWidth="900px" padding="0 2em">
       <Title>Shows</Title>
 
       <Toggle toggle={toggle} setToggle={setToggle} />

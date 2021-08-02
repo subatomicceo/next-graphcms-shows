@@ -17,10 +17,6 @@ export const ListItemWrap = styled.div`
     border-radius: 10px 10px 0 0;
   }
 
-  & > * {
-    flex: 1;
-  }
-
   &:last-child {
     border-radius: 0 0 10px 10px;
   }
@@ -35,18 +31,29 @@ export const ListItemWrap = styled.div`
   h3 {
     margin: 0;
     font-size: 1.5rem;
+    flex: 2;
   }
 
   p {
     margin: 0;
     font-size: 1.25rem;
     line-height: 1.5;
+    flex: 2;
+  }
+
+  b {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    flex: 1;
   }
 
   span {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.5;
+    flex: 1;
   }
 `
 
@@ -55,6 +62,6 @@ export const ListWrap = styled.div`
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin: 1rem auto;
   width: 100%;
 `
