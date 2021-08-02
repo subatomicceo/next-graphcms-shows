@@ -1,4 +1,4 @@
-  
+import Error from './_error'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
@@ -46,11 +46,14 @@ const theme = {
 }
 
 export default function App({ Component, pageProps }) {
+  const { errorCode } = pageProps
   return (
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        {
+          errorCode ? <Error statusCode={errorCode} /> : <Component {...pageProps} />
+        }
       </ThemeProvider>
     </>
   )
